@@ -6,7 +6,7 @@ import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 
-const App = () => {
+const App = (props) => {
   const state = {
     additionalPrice: 0,
     car: {
@@ -25,7 +25,7 @@ const App = () => {
         <AddedFeatures car={state.car} />
       </div>
       <div className="box">
-        <AdditionalFeatures additionalFeatures={state.additionalFeatures} />
+        <AdditionalFeatures additionalFeatures={props.additionalFeatures} />
         <Total car={state.car} additionalPrice={state.additionalPrice} />
       </div>
     </div>

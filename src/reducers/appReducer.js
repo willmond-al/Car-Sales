@@ -1,3 +1,5 @@
+import { TOGGLE_ADDITIONAL_FEATURE } from '../actions/appActions'
+
 const initialState = {
     additionalFeatures: [
         { id: 1, name: 'V-6 engine', price: 1500, added: false },
@@ -9,7 +11,7 @@ const initialState = {
 
 export const appReducer = (state=initialState, action) =>{
     switch(action.type){
-        case "TOGGLE_ADDITIONAL_FEATURE":
+        case TOGGLE_ADDITIONAL_FEATURE:
             return {
                 ...state,
                 additionalFeatures: state.additionalFeatures.map(feature =>{
