@@ -25,6 +25,7 @@ In this project you will implement Redux to manage the state for this React appl
 
 ## Instructions
 
+
 ### Task 1: Project Setup
 
 ## Project Set Up
